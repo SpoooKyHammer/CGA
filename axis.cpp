@@ -16,11 +16,17 @@ void main(){
     line(center_x, 0, center_x, max_y); //vertical line
     
     circle(center_x - 200, center_y - 100, 50); // top right
+    outtextxy(center_x - 200, center_y - 80, "Circle");
+    
     rectangle(center_x + 100, center_y - 200, center_x + 250, center_y - 100); // top right
+    outtextxy(center_x + 100, center_y - 80, "Recangle");
     
     ellipse(center_x - 200, center_y + 100, 0, 360, 90, 60);// full ellipse bottom left
+    outtextxy(center_x - 200, center_y + 120, "Ellipse");
+    
     ellipse(center_x + 200, center_y + 100, 90, 270, 90, 60); // half ellipse aka arc bottom right
-    //arc(center_x + 200, center_y + 100, 90, 270, 90); // another way of creating arc bottom right
+    //arc(center_x + 200, center_y + 100, 90, 270, 90);
+    outtextxy(center_x + 200, center_y + 120, "Arc");
     
     getch();
     closegraph();
